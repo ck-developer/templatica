@@ -1,0 +1,25 @@
+{
+  "name": "templatica",
+  "version": "0.0.1",
+  "keywords": [
+    "web",
+    "app",
+    "gulp",
+    "sass",
+    "coffee"
+  ],
+  "author": {
+    "name": "CkDeveloper",
+    "email": "claude@khedhiri.com",
+    "url": "http://khedhiri.com/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": ["fonts/*.eot", "fonts/*.svg", "fonts/*.ttf", "fonts/*.woff", "fonts/*.woff2"]
+    }
+  }
+}

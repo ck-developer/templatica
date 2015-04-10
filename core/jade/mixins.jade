@@ -1,0 +1,18 @@
+mixin script(input, output)
+    !='\n' + '<!-- build:js ' + output + ' -->'
+    script(type='text/javascript', src=input)
+    // endbuild
+mixin scripts(inputs, output)
+    !='\n' + '<!-- build:js ' + output + ' -->'
+    each input in inputs
+        script(type='text/javascript', src=input)
+    // endbuild
+mixin link(input, output)
+    !='\n' + '<!-- build:css ' + output + ' -->'
+    link(rel='stylesheet' type='text/css', href=input)
+    // endbuild
+mixin links(inputs, output)
+    !='\n' + '<!-- build:css ' + output + ' -->'
+    each input in inputs
+        link(rel='stylesheet' type='text/css', href=input)
+    // endbuild

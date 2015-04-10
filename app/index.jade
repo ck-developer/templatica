@@ -1,0 +1,36 @@
+include  ../core/jade/mixins
+
+doctype html
+html(lang="en")
+    head
+        title Templatica Framework
+        +link("assets/bower_components/bootstrap/dist/css/bootstrap.min.css", "assets/plugins/bootstrap/css/bootstrap.min.css")
+        +link("assets/css/templatica.css", "assets/css/templatica.min.css")
+    body
+        // Static navbar
+        nav.navbar.navbar-default.navbar-static-top
+            .container
+                .navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='#')
+                        img(src="assets/img/logo.png", alt="templatica")
+                #navbar.navbar-collapse.collapse
+                    p.navbar-text
+                        | Templatica
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='https://github.com/ck-developer/templatica') Github
+                // /.nav-collapse
+        .container
+            // Main component for a primary marketing message or call to action
+            .jumbotron
+                h1 Templatica Framework
+                p
+                    | Always a pleasure scaffolding your template.
+        // /container
+        +script("assets/bower_components/jquery/dist/jquery.min.js", "assets/plugins/jquery/jquery.min.js")
+        +script("assets/bower_components/bootstrap/dist/js/bootstrap.min.js", "assets/plugins/bootstrap/js/bootstrap.min.js")
